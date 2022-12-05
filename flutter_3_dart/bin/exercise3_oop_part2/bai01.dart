@@ -19,8 +19,8 @@ void main(List<String> arguments) {
 }
 
 List timHinhCoChuViDienTichLonNhat(List listShape) {
-  int maxChuVi = 0;
-  int maxDienTich = 0;
+  double maxChuVi = 0;
+  double maxDienTich = 0;
   for(Rectangle rec in listShape) {
     if (rec.chuVi() > maxChuVi) {
       maxChuVi = rec.chuVi();
@@ -33,8 +33,8 @@ List timHinhCoChuViDienTichLonNhat(List listShape) {
 }
 
 List timHinhCoChuViDienTichNhoNhat(List listShape) {
-  int minChuVi = double.maxFinite.toInt();
-  int minDienTich = double.maxFinite.toInt();
+  double minChuVi = double.maxFinite;
+  double minDienTich = double.maxFinite;
   for(Rectangle rec in listShape) {
     if (rec.chuVi() < minChuVi) {
       minChuVi = rec.chuVi();

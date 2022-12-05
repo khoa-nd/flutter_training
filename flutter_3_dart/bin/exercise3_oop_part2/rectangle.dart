@@ -1,13 +1,22 @@
-class Rectangle {
-  int length, width;
+import 'shape.dart';
+
+class Rectangle extends Shape{
+  double length, width;
 
   Rectangle(this.length, this.width);
 
-  int chuVi() {
+  @override
+  double chuVi() {
     return (length + width) * 2;
   }
 
-  int dienTich() {
-    return length * width; 
+  @override
+  double dienTich() {
+    return length * width * 1.0; 
+  }
+
+  @override
+  String name() {
+    return "Rectangle";
   }
 }
